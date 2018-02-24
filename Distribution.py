@@ -7,7 +7,7 @@ from collections import Counter
 import seaborn as sns
 print("start")
 
-data = pd.read_csv('C:/Users/jeremy.m.cheung/Desktop/prediction_pj/data/EPSGrowth.csv',sep=',',header=None,names=['date','epsg'])
+data = pd.read_csv('data/EPSGrowth.csv',sep=',',header=None,names=['date','epsg'])
 # occurrences = Counter(data['epsg'])
 # print(occurrences)
 fileter_extreme = list(filter(lambda x: 200 > x > -100, data['epsg']))
