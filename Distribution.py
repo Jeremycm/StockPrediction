@@ -19,7 +19,7 @@ print("median:" + str(st.median(fileter_extreme)))
 print("percentil: " + str(stats.percentileofscore(fileter_extreme,25.34)))
 
 
-# fileter_extreme = pd.Series(fileter_extreme,name="EPSG'(filter extreme)")
-# sns.distplot(fileter_extreme)
-# plt.show()
+fileter_extreme = pd.Series(fileter_extreme,name="EPSG'(filter extreme)")
+sns.distplot(fileter_extreme)
+plt.show()
 print("end")
